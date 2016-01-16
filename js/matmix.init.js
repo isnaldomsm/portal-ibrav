@@ -867,6 +867,9 @@ jQuery(document).ready(function ($) {
         $('.date-mask').mask('11/11/1111', {
             placeholder: "__/__/____"
         });
+         $('.cpf-mask').mask('000.000.000-00', {
+            placeholder: "000.000.000-00"
+        });
         $('.time-mask').mask('00:00:00', {
             placeholder: "00:00:00"
         });
