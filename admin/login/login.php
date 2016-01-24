@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 class Login {
 
@@ -11,7 +11,10 @@ class Login {
 
 		return $this;
 	}
-
+	public function notLogged(){
+		$_SESSION['restrito']['logged'] = false;
+		return $this;
+	}
 	public function setName( $name ){
 		$_SESSION['restrito']['name'] = $name;
 

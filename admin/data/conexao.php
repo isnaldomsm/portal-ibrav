@@ -1,13 +1,14 @@
 <?php 
+	session_start();
 	ini_set('display_errors', 0 );
 	error_reporting(0);
 	
 //	session_start();
 	
-	$db_host  = '177.70.107.226';
-	$db_user  = 'laborato_user';
-	$db_pass  = 'BZFVvS{[xbxu';
-	$database = 'laborato_site';
+	$db_host  = 'localhost';
+	$db_user  = 'root';
+	$db_pass  = '';
+	$database = 'ibrav';
 
 	// efetua conexao com o mysql e seleciona o banco de dados
 	@mysql_connect($db_host, $db_user, $db_pass) or die(mysql_error());

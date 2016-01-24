@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A Components Mix Bootstarp 3 Admin Dashboard Template">
 <meta name="author" content="Westilian">
-<title>Portal do aluno - Ibrav Treinamentos</title>
+<title>Portal do administrativo - Ibrav Treinamentos</title>
 <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="css/animate.css" type="text/css">

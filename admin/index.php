@@ -1,3 +1,7 @@
+<?php 
+require_once("data/conexao.php");
+
+?>
 <!doctype html>
 <html>
    <head>
@@ -9,10 +13,20 @@
          </div>
          <div class="login-container">
             <img class="login-img-card" src="images/logo.png" alt="login thumb" />
-            <form class="form-signin">
-               <input type="email"  tabindex="1"class="form-control" placeholder="E-mail" required autofocus>
-               <input type="password" tabindex="2" id="inputPassword" name="senha" class="form-control floatlabel " placeholder="Senha" maxlength="6" required>
+            <form class="form-signin" method="POST" action="controller/login.php">
+               
+               <input type="email" name="email" tabindex="1"class="form-control" placeholder="E-mail" required autofocus>
+              
+               <input type="password" tabindex="2" id="inputPassword" name="senha" class="form-control floatlabel " placeholder="Senha" required>
+               <?php 
+                 
+                if($_SESSION["logged"]){
+                  echo "<pre class='xdebug-var-dump' dir='ltr'><font color='#cc0000'>Usuário ou senha invalidos</font></pre>";
+                  session_destroy();
+                }
+               ?>
                <button class="btn btn-primary btn-block btn-signin" type="submit">Login</button>
+               <input type="hidden" name="tipo" id="tipo" value="login">
             </form>
             <a href="#" class="forgot-password">
             Esqueçeu sua senha?
@@ -23,12 +37,8 @@
          </div>
       </div>
       <?php include("includes/inc-footer.php");?>
-      <script>
-         jQuery(function($){
-                
-                $("#cpf").mask("999.999.999-99");
-                
-         });
-      </script>
    </body>
 </html>
+
+
+
