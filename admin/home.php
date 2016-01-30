@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-     <?php echo include('includes/inc-head.php');?></head>
+     <?php  include('includes/inc-head.php');?></head>
 <body>
     <div class="bb-alert alert alert-success noty_animated fadeInUp">
         <span>Table Callback Demo Content</span>
@@ -32,171 +32,12 @@
                     </form>
                     <span class="search-close waves-effect"><i class="ico-cross"></i></span>
                 </div>
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="clearfix top-bar-action">
-                            <span class="leftbar-action-mobile waves-effect"><i class="fa fa-bars "></i></span>
-                            <span class="leftbar-action desktop waves-effect"><i class="fa fa-bars "></i></span>
-						<span class="waves-effect search-btn mobile-search-btn">
-						<i class="fa fa-search"></i>
-						</span>
-                            <span class="rightbar-action waves-effect"><i class="fa fa-bars"></i></span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 responsive-fix top-mid">
-                        <div class="notification-nav">
-                            <ul class="clearfix">
-                                <li class="dropdown"><a href="#" data-toggle="dropdown" class="hide-small-device waves-effect"><i class="fa fa-envelope"></i><span class="alert-bubble">15</span></a>
-                                    <div role="menu" class="dropdown-menu message-dropdown msg-lists fadeInUp hide-small-device">
-                                        <div class="message-wrap">
-                                            <h4>You have 15 new messages</h4>
-                                            <ul class="clearfix">
-                                                <li class="clearfix">
-                                                    <a href="#" class="message-thumb"><img src="images/avatar/adellecharles.jpg" alt="image">
-                                                    </a><a href="#" class="message-intro"><span class="message-meta">Adellecharles </span>Nunc aliquam dolor... <span class="message-time">today at 10:20 pm</span></a>
-                                                </li>
-                                                <li class="clearfix">
-                                                    <a href="#" class="message-thumb"><img src="images/avatar/allisongrayce.jpg" alt="image">
-                                                    </a><a href="#" class="message-intro"><span class="message-meta">Allisongrayce </span>In hac habitasse ... <span class="message-time">today at 8:29 pm</span></a>
-                                                </li>
-                                                <li class="clearfix">
-                                                    <a href="#" class="message-thumb"><img src="images/avatar/amarkdalen.jpg" alt="image">
-                                                    </a><a href="#" class="message-intro"><span class="message-meta">Amarkdalen </span>Suspendisse ac mauris ... <span class="message-time">yesterday at 12:29 pm</span></a>
-                                                </li>
-                                                <li class="clearfix">
-                                                    <a href="#" class="message-thumb"><img src="images/avatar/annapickard.jpg" alt="image">
-                                                    </a><a href="#" class="message-intro"><span class="message-meta">Annapickard </span>Vivamus lacinia facilisis... <span class="message-time">yesterday at 11:48 pm</span></a>
-                                                </li>
-                                                <li class="clearfix">
-                                                    <a href="#" class="message-thumb"><img src="images/avatar/bobbyjkane.jpg" alt="image">
-                                                    </a><a href="#" class="message-intro"><span class="message-meta">Bobbyjkane </span>Donec vel iaculis ... <span class="message-time">1 month ago</span></a>
-                                                </li>
-                                                <li class="clearfix">
-                                                    <a href="#" class="message-thumb"><img src="images/avatar/chexee.jpg" alt="image">
-                                                    </a><a href="#" class="message-intro"><span class="message-meta">Chexee </span> Curabitur eget blandit...<span class="message-time">3 months ago</span></a>
-                                                </li>
-                                                <li class="clearfix">
-                                                    <a href="#" class="message-thumb"><img src="images/avatar/coreyweb.jpg" alt="image">
-                                                    </a><a href="#" class="message-intro"><span class="message-meta">Coreyweb </span>Etiam molestie nulla... <span class="message-time">1 year ago</span></a>
-                                                </li>
-                                            </ul>
-                                            <a class="btn btn-primary btn-block notification-btn clearfix waves-effect" href="#"><span>View All</span></a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="dropdown"><a href="#" data-toggle="dropdown" class="hide-small-device waves-effect "><i class="fa fa-bell"></i><span class="alert-bubble">10</span></a>
-                                    <div role="menu" class="dropdown-menu notification-dropdown fadeInUp noty-lists hide-small-device">
-                                        <div class="notification-wrap">
-                                            <h4>You have 10 new notifications</h4>
-                                            <ul>
-                                                <li><a href="#" class="clearfix"><span class="ni w-green"><i class="fa fa-bullhorn"></i></span><span class="notification-message">Pellentesque semper posuere. <span class="notification-time clearfix">3 Min Ago</span></span></a>
-                                                </li>
-                                                <li><a href="#" class="clearfix"><span class="ni w-orange"><i class="fa fa-life-ring"></i></span><span class="notification-message">Nulla commodo sem at purus. <span class="notification-time clearfix">1 Hours Ago</span></span></a>
-                                                </li>
-                                                <li><a href="#" class="clearfix"><span class="ni w-bondi-blue"><i class="fa fa-star-o"></i></span><span class="notification-message">Fusce condimentum turpis. <span class="notification-time clearfix">3 Hours Ago</span></span></a>
-                                                </li>
-                                                <li><a href="#" class="clearfix"><span class="ni w-blue"><i class="fa fa-trophy"></i></span><span class="notification-message">Pellentesque habitant morbi. <span class="notification-time clearfix">Yesterday</span></span></a>
-                                                </li>
-                                                <li><a href="#" class="clearfix"><span class="ni w-brown"><i class="fa fa-bolt"></i></span><span class="notification-message">Fusce bibendum lacus mauris.<span class="notification-time clearfix">1 Month Ago</span></span></a>
-                                                </li>
-                                                <li><a href="#" class="clearfix"><span class="ni w-dark-yellow"><i class="fa fa-bookmark-o"></i></span><span class="notification-message">Donec id mi placerat, scelerisque.<span class="notification-time clearfix">3 Months Ago</span></span></a>
-                                                </li>
-                                            </ul>
-                                            <a class="btn btn-primary btn-block notification-btn clearfix waves-effect" href="#"><span>View All</span></a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pull-left mobile-search">
-						<span class=" waves-effect search-btn">
-						<i class="fa fa-search"></i>
-						</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 responsive-fix">
-                        <div class="top-aside-right">
-                            <div class="user-nav">
-                                <ul>
-                                    <li class="dropdown">
-                                        <a data-toggle="dropdown" href="#" class="clearfix dropdown-toggle waves-effect waves-block waves-classic">
-                                            <span class="user-info">Westilian Jaman <cite>jaman@mymail.com</cite></span>
-                                            <span class="user-thumb"><img src="images/avatar/jaman.jpg" alt="image"></span>
-                                        </a>
-                                        <ul role="menu" class="dropdown-menu fadeInUp">
-                                            <li><a href="#"><span class="user-nav-icon"><i class="fa fa-briefcase"></i></span><span class="user-nav-label">My Account</span></a>
-                                            </li>
-                                            <li><a href="#"><span class="user-nav-icon"><i class="fa fa-user"></i></span><span class="user-nav-label">View Profile</span></a>
-                                            </li>
-                                            <li><a href="#"><span class="user-nav-icon"><i class="fa fa-cogs"></i></span><span class="user-nav-label">Settings</span></a>
-                                            </li>
-                                            <li><a href="#"><span class="user-nav-icon"><i class="fa fa-lock"></i></span><span class="user-nav-label">Logout</span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pull-right desktop-search">
-							<span class="waves-effect search-btn">
-							<i class="fa fa-search"></i>
-							</span>
-                            </div>
-                            <span class="rightbar-action waves-effect"><i class="fa fa-bars"></i></span>
-                        </div>
-                    </div>
-                </div>
+                <?php include('includes/inc-topo.php');?>
             </div>
         </header>
             <div class="main-container">
                 <div class="container-fluid">
-                    <div class="row large-info-graph">
-                        <div class="col-md-12">
-                            <div class="w-info-chart">
-                                <div class="w-info-chart-header">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h2>23,320 Items Sold</h2>
-                                            <span class="info-meta-value">Earning: $190,808 (USD)</span>
-                                            <p>
-                                                This is a income chart for the Matmix products
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div id="ocean-flot-legend"></div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="mini-chart-list">
-                                    <ul>
-                                        <li>
-                                            <span class="epie-chart" data-percent="40" data-barcolor="#00acc1" data-tcolor="#e0e0e0" data-scalecolor="#e0e0e0" data-linecap="round" data-linewidth="6" data-size="80" data-animate="2000"><span class="percent"></span>
-                                            </span>
-                                            <span class="chart-sub-title">Direct</span>
-                                        </li>
-                                        <li>
-                                            <span class="epie-chart" data-percent="35" data-barcolor="#ffb74d" data-tcolor="#e0e0e0" data-scalecolor="#e0e0e0" data-linecap="round" data-linewidth="6" data-size="80" data-animate="2000"><span class="percent"></span>
-                                            </span>
-                                            <span class="chart-sub-title">Affiliate</span>
-                                        </li>
-                                        <li>
-                                            <span class="epie-chart" data-percent="25" data-barcolor="#4caf50" data-tcolor="#e0e0e0" data-scalecolor="#e0e0e0" data-linecap="round" data-linewidth="6" data-size="80" data-animate="2000"><span class="percent"></span>
-                                            </span>
-                                            <span class="chart-sub-title">Renew</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="chart-container">
-                                    <div id="ocean-flot">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    
                     <div class="row">
                         <div class="col-md-4">
                             <div class="iconic-w-horizontal w_bg_teal light-text">
@@ -204,8 +45,8 @@
                                     <span><i class="ico-users"></i></span>
                                 </a>
                                 <div class="w-meta-info number-rotate">
-                                    <span class="w-meta-value number-animate" data-value="1289" data-animation-duration="1500">0</span>
-                                    <span class="w-meta-title">New Users</span>
+                                    <span class="w-meta-value number-animate" data-value="1" data-animation-duration="1500">1</span>
+                                    <span class="w-meta-title">Usuarios Cadastrados</span>
                                 </div>
                             </div>
                         </div>
@@ -235,58 +76,7 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="box-widget widget-module">
-                                <div class="widget-head clearfix">
-                                    <span class="h-icon"><i class="fa fa-calendar"></i></span>
-                                    <h4>Events</h4>
-                                    <ul class="widget-action-bar pull-right">
-                                        <li><span class="widget-collapse waves-effect w-collapse"><i class="fa fa-angle-down"></i></span>
-                                        </li>
-                                        <li><span class="widget-remove waves-effect w-remove"><i class="ico-cross"></i></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="widget-container">
-                                    <div class="calendar-toolbar">
-                                        <div class="row">
-                                            <div class="col-md-6 col-md-offset-3">
-                                                <div class="select-cal-view">
-                                                    <div class="btn-group">
-                                                        <button class="btn btn-link CalMonthView">Month</button>
-                                                        <button class="btn btn-link CalAgendaWeekView">Week</button>
-                                                        <button class="btn btn-link CalAgendaDayView">Day</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-sm-8">
-                                                <div class="calendar-nav">
-                                                    <div class="btn-group">
-                                                        <button class="btn btn-default CalPrev">Prev</button>
-                                                        <button class="btn btn-default CalNext">Next</button>
-                                                        <button class="btn btn-default CalToday">Today</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-md-offset-4 col-sm-4">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control cal-date-picker" placeholder="Select a Date">
-                                                    <span class="input-group-btn">
-												<button class="btn btn-default cal-goDate">Go</button>
-												</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div id="event-calendar">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="box-widget widget-module">
                                 <div class="widget-head clearfix">
                                     <span class="h-icon"><i class="fa fa-table"></i></span>

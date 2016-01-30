@@ -1,5 +1,5 @@
 <li>
-	<a href="ui-elements-components.html">
+	<a href="turmas-list.php">
 		<span class="nav-icon"><i class="fa fa-list-ol"></i>
 		</span>
 		<span class="nav-label">Turmas
