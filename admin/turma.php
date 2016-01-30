@@ -1,11 +1,50 @@
 
 <?php 
 require('data/conexao.php');
+$id         = $_REQUEST['id'];
+
+$dados      = mysql_query("SELECT * FROM turmas where id = {$id}");
+$fetch      = mysql_fetch_array($dados);
+$nome       = $fetch['nome'];
+$cidade     = $fetch['cidade'];
+$ano        = $fetch['ano'];
+
+
 ?>
 <!doctype html>
 <html>
 <head>
      <?php include('includes/inc-head.php');?></head>
+     <style type="text/css">
+     .button {  
+              color: #fff;
+              background-color: #007180;
+              width: 65px;
+              height: 38px;
+              display: inline-block;
+              margin-bottom: 0;
+              font-weight: 500;
+              text-align: center;
+              vertical-align: middle;
+              touch-action: manipulation;
+              cursor: pointer;
+              outline: 0;
+              background-image: none;
+              white-space: nowrap;
+              padding: 8px 12px;
+              font-size: 14px;
+              line-height: 1.42857143;
+              border-radius: 3px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              -webkit-transition: all 0.2s ease-out;
+              -moz-transition: all 0.2s ease-out;
+              -o-transition: all 0.2s ease-out;
+              transition: all 0.2s ease-out;
+            }
+     </style>
 <body>
     
     <div class="page-container list-menu-view">
@@ -76,31 +115,43 @@ require('data/conexao.php');
                                         <div class="form-group">
                                             
                                             <div class=" col-md-8">
-                                                <input type="text" class="form-control" name="nome" required placeholder="Insira o nome da turma">
+                                                <input type="text" class="form-control" value="<?php echo $nome;?>" name="nome" required placeholder="Insira o nome da turma">
                                                 <p class="input-instruction">
                                                    
                                                 </p>
                                             </div>
                                             <div class=" col-md-8">
-                                                <input type="text" class="form-control" name="cidade" required placeholder="Insira a cidade da turma.">
+                                                <input type="text" class="form-control" name="cidade" value="<?php echo $cidade?>" required placeholder="Insira a cidade da turma.">
                                                 <p class="input-instruction">
                                                   
                                                 </p>
                                             </div>
                                             <div class=" col-md-8">
-                                                <input type="text" maxlength="4" class="form-control" name="ano" required placeholder="Insira o ano de formação da turma.">
+                                                <input type="text" maxlength="4" class="form-control" name="ano" value="<?php echo $ano?>" required placeholder="Insira o ano de formação da turma.">
                                                 <p class="input-instruction">
                                                   
                                                 </p>
                                             </div>
                                         </div>
+                                        <?php 
+                                            if(isset($id)){
+                                        ?>
+                                        
+                                        <input type="hidden" name="tipo" id="tipo" value="edt">
+                                        <input type="hidden" name="id"   id="id"   value="<?php echo $id;?>">                                     
+                                        <?php } else { ?>
+                                        
                                         <input type="hidden" name="tipo" id="tipo" value="add">
+                                        
+                                        <?php 
+                                            }
+                                        ?>
                                         <div class="form-group">
                                             <label class="col-md-12 control-label">&nbsp;</label>
                                             <div class="col-md-8">
                                                 <div class="form-actions">
                                                     <button type="submit" class="btn btn-primary">Salvar</button>
-                                                   
+                                                    <a class="button" href="">Excluir</a>
                                                 </div>
                                             </div>
                                         </div>

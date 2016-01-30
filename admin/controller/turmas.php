@@ -12,9 +12,32 @@
 				$insert 		= "INSERT INTO turmas (nome, ano, cidade) VALUES ('".$nome."', '".$ano."', '".$cidade."') ";
 				$query			= mysql_query($insert);
 
-				header('LOCATION: ../turma.php');
+				if($query){
+						$_SESSION['msg'] 		= 'Dados cadastrados com sucesso!';	
+				}else {
+						$_SESSION['msg'] 		= 'Erro no cadastro, tente novamente!';
+				}
+
+				header('LOCATION: ../turmas-list.php');
 
 			break;
+		case'edt':
+				$id 		= $_REQUEST['id'];
+
+	 			$update 	= "UPDATE turmas SET nome='".$nome."', cidade='".$cidade."', ano = '".$ano."' WHERE id = '".$id."' ";
+				$query 		= mysql_query($update);
+
+				if($query){
+						$_SESSION['msg'] 		= 'Dados cadastrados com sucesso!';	
+				}else {
+						$_SESSION['msg'] 		= 'Erro no cadastro, tente novamente!';
+				}
+
+				header('LOCATION: ../turmas-list.php');
+
+
+
+		break;
 		
 		default:
 			# code...

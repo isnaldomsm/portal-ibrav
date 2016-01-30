@@ -6,6 +6,13 @@ require('data/conexao.php');
 <html>
    <head>
       <?php include("includes/inc-head.php");?>
+    <style type="text/css">
+
+        a:link {text-decoration: none;color:#333333}
+        a:active {text-decoration: none;}
+        a:visited {text-decoration: none;color:#333333}
+        a:hover {text-decoration: underline;color:#333333}
+    </style>
    </head>
    <body>
       <div class="page-container list-menu-view">
@@ -104,21 +111,22 @@ require('data/conexao.php');
                                                           $ano      = $row['ano'];
                                                           $cidade   = $row['cidade'];
                                     ?>
+                                    
                                     <tr>
-                                    <a href="turmas.php?id=<?php echo $id;?>">
+                                  
                                        <td>
-                                          <?php echo $id;?>
+                                          <a href="turma.php?id=<?php echo $id;?>"><?php echo $id; ?></a>
                                        </td>
                                        <td>
-                                           <?php echo $nome;?>
+                                           <a href="turma.php?id=<?php echo $id;?>">  <?php echo $nome; ?></a>
                                        </td>
                                        <td>
-                                          <?php echo $ano;?>
+                                         <a href="turma.php?id=<?php echo $id;?>">  <?php echo $ano; ?> </a>
                                        </td>
                                        <td>
-                                          <?php echo $cidade;?>
+                                          <a href="turma.php?id=<?php echo $id;?>"> <?php echo $cidade;?></a>
                                        </td>
-                                       </a>
+                                       
                                     </tr>
                                     <?php 
                                             endwhile;
